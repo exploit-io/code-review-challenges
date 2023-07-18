@@ -1,4 +1,3 @@
-
 <?php
     $FLAG = 'CTF{__YOU__ARE__A__PHP__KILLER__}';
 
@@ -12,3 +11,5 @@
         }
     }
 ?>
+
+
