@@ -1,0 +1,33 @@
+version: "2.2"
+
+services:
+  web-code-vuln:
+    build: web/
+    restart: always
+    ports:
+      - "9000:80"
+    cpus: 0.4
+    mem_limit: 1024m
+    environment:
+      - MYSQL_HOST=mysqli
+      - MYSQL_USER=webcode
+      - MYSQL_PASSWORD=ahsdbjhasdjhsabdjbmcnxbch
+      - MYSQL_DATABASE=db
+    depends_on:
+      - mysqli
+
+  mysqli:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    expose:
+      - 3306
+    cpus: 0.6
+    mem_limit: 2048m
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_USER=webcode
+      - MYSQL_PASSWORD=ahsdbjhasdjhsabdjbmcnxbch
+      - MYSQL_DATABASE=db
+    volumes:
+      - "./mysql/:/docker-entrypoint-initdb.d/"
