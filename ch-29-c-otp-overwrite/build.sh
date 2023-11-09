@@ -1,0 +1,1 @@
+docker run --rm -v "$PWD":/app -w /app i386/gcc:latest gcc vuln.c -o vuln -m32 -no-pie -fno-stack-protector -z noexecstack -static
