@@ -9,7 +9,9 @@ HTML Page Generator, Creates an HTML Page based on User Input, I think it is Exc
 
 این نرم افزار صفحات وب را براساس ورودی کاربر ایجاد میکند! به نظر من این سایت بسیار امن است، ثابت کن که من اشتباه میکنم.
 
-url: `http://exploitio.ir:8080`
+Challenge URL: `http://exploitio.ir:8080`
+
+Source Code: `https://github.com/exploit-io/code-review-challenges/tree/main/ch-50-HTMLGen`
 
 Format: ‍‍‍‍`EXPLOITIO{*}`
 Author: `exploitio`
