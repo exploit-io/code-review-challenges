@@ -5,7 +5,7 @@ app = Flask(__name__)
 port = 8080
 
 def encryption_key():
-    key = "EXPLOITIO{_________________FLAG_________________}"
+    key = "EXPLOITIO{I_4M_Th3_M4ST3R_0F_SSTI}"
     return key
 
 class App(FlaskView):

